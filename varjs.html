@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Primitive data types: string, number, boolean, null, undefined, symbol, bigint
+        // Non-primitive data types: object, array, function
+
+        // string
+        var name = "ABES";
+        console.log(name);
+        console.log(typeof name);
+
+        // number
+        let myCot = 8288382319;
+        console.log(myCot);
+        console.log(typeof myCot);
+
+        // boolean
+        let courseDone = false;
+        console.log(courseDone);
+        console.log(typeof courseDone);
+
+        // null
+        let add = null;
+        console.log(add);
+        console.log(typeof add); // object (JS bug)
+
+        // undefined
+        let email;
+        console.log(email);
+        console.log(typeof email);
+
+        // bigint
+        let bigAmount = BigInt("7238222123438333");
+        console.log(bigAmount);
+        console.log(typeof bigAmount);
+
+        // Symbol (ES6)
+        let var1 = Symbol("hello");
+        let var2 = Symbol("hello");
+        console.log(var1 == var2); // false
+        console.log(typeof var1);  // symbol
+
+        // Object (non-primitive)
+        let myinfo = {
+            name: "ANAND",
+            mob: 7678487269,
+            ismarried: false,
+            email: "vs3976145@gmail.com",
+            address: null
+        };
+
+        // access object keys
+        console.log(myinfo);
+        console.log(myinfo.name);
+        console.log(myinfo.mob);
+        console.log(myinfo.email);
+        console.log(myinfo.address);
+
+        function hello() {
+            let myName="ABES EC"
+            console.log(myName);
+            console.log(typeof(hello));
+        }
+        hello () 
+        // array
+        let student =["name1","name2"];
+        console.log(student[0]);
+    </script>
+</body>
+</html>
