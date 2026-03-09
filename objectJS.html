@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Object in JS</title>
+</head>
+
+<body>
+
+<script>
+
+// object - collection of key and value pairs
+
+let student = { 
+    id: 15310137, 
+    name: "anand",
+    age: 20,
+    isMarried: false,
+
+    address: {
+        streetNo: 2,
+        area: "laxminagar",
+        pincode: 110092,
+        city: "delhi"
+    },
+
+    education: ["BTECH", "AIML", 3, 2025],
+
+    getInfo: function() {
+        return "My details are " + this.id + " and " + this.name;
+    }
+};
+
+// Access object properties
+console.log(student.id);
+console.log(student.address.city);
+console.log(student.education[1]);
+console.log(student.getInfo());
+
+// check key
+console.log('id' in student);
+
+// delete key
+console.log(delete student.name);
+console.log(student);
+
+// object length
+let StudentKeys = Object.keys(student);
+console.log(StudentKeys.length);
+
+// iterate object
+
+// for loop
+for(let i=0; i<StudentKeys.length; i++){
+    console.log(student[StudentKeys[i]]);
+}
+
+// for-in loop
+for(let x in student){
+    console.log(student[x]);
+}
+
+
+// create object using new Object()
+
+let myInfo = new Object();
+myInfo.name = "anand";
+myInfo.age = 20;
+myInfo.city = "laxminagar";
+myInfo.isMarried = true;
+
+
+// print keys of myInfo
+console.log(myInfo.name);
+
+// access object property using [] notoation
+
+console.log(myInfo['age']);
+
+</script>
+
+</body>
+</html>
