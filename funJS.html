@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fnc js </title>
+</head>
+<body>
+    <script>
+        
+        demo1("React");
+        // with default parameter
+
+        function cal(a,b = 30){
+            console.log("addition of two number is " = (a+b) );
+        }
+        cal(12);
+
+        // An anonymous function in JavaScript is a function that does not have an identifier (name) associated with i
+
+        let msg=function(){
+            console.log("hello advanced js")
+        };
+        msg();
+        // share code above  fnc i,e arrow fnc
+        let msg1=()=>console.log(hello function as an arrow")
+        msg1();
+
+        // arrow function using multiple line
+        let add = (a,b)=>{
+            console.log("first number is" + q );
+            console.log("second num is " +b);
+            cosole.log ("addition of two number is " +(a+b));
+
+        }
+        add(4,5);
+
+
+    //     An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It is a design pattern used primarily to create a private scope for variables, preventing them from interfering with or polluting the global namespace.
+       (function)(){
+        console.log("IIFE IS JS");
+       })();
+       // IIDE USING ARROW
+       (()=>console.log("IIFE usinf arrow"))();
+       
+    //    call back function 
+
+    // A callback function in JavaScript is a function passed as an argument to another function, intended to be executed ("called back") later or upon a specific event. This concept is central to JavaScript's asynchronous and event-driven programming
+   function mul(callback){
+    var num1 = 10;
+    console.log("First Value is " + num1);
+
+    var num2 = 20;
+    console.log("Second Value is " + num2);
+
+    var res = num1 * num2;
+    callback(res);
+}
+
+function result(res){
+    console.log("Multiplication is " + res);
+}
+
+    mul(result);
+
+    // call by fnc using setTimeout 
+    function msg2(){
+    document.writeln("Hello");
+}
+
+function loading(){
+    document.writeln("loding..........");
+};
+
+setTimeout(msg2, 2000);
+loading();
+
+// map filter and reduce
+
+let num =[3,4,5,7];
+let finalresult=map.num(())
+
+// Definition:
+// The filter() method is used to create a new array containing 
+// elements that pass a specified condition (test function).
+
+// Example array
+var numbers = [10, 15, 20, 25, 30];
+
+// Using filter() method
+// It will return only numbers greater than 20
+var result = numbers.filter(function(num){
+    return num > 20;
+});
+
+// Printing original array
+document.writeln("Original Array: " + numbers + "<br>");
+
+// Printing filtered array
+document.writeln("Filtered Array (Greater than 20): " + result);
+
+// reduce call back
+
+
+// promises
+// objects that represent the eventual completion or failure of an asynchronous operation and its resulting value
+
+// State 	Description
+// Pending	The initial state; the asynchronous operation is still in progress, and the result is not yet available.
+// Fulfilled	The operation completed successfully, and a value is available (e.g., data fetched from an API). This is also sometimes referred to as "resolved".
+// Rejected	The operation failed, and a reason (error) is availab 
+
+let promise=new promise(function(resolve,reject)) {
+    if (age =>18) {
+        resolve("valid age");
+
+    }
+    else {
+        reject ("wait for next year");
+    }
+}
+    </script>   
+    
+</body>
+</html>
