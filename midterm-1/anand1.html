@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Show Paragraph & Hover Effect</title>
+    <style>
+        #para {
+            display: none; 
+            font-size: 18px;
+        }
+        #para:hover {
+            color: red;
+            background-color: lightyellow;
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="showPara()">Click Me</button>
+
+    <p id="para">This is a hidden paragraph. Now you can see ! My NAME IS :ANAND RAI
+      Account no :2025345321
+     </p>
+
+    <script>
+        function showPara() {
+            document.getElementById("para").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
