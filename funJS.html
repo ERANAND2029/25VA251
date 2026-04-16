@@ -110,15 +110,22 @@ document.writeln("Filtered Array (Greater than 20): " + result);
 // Fulfilled	The operation completed successfully, and a value is available (e.g., data fetched from an API). This is also sometimes referred to as "resolved".
 // Rejected	The operation failed, and a reason (error) is availab 
 
-let promise=new promise(function(resolve,reject)) {
-    if (age =>18) {
-        resolve("valid age");
+let promise = new Promise(function(resolve, reject){
 
+    let success = false;
+
+    if(success){
+        resolve("You passed the exam");
     }
-    else {
-        reject ("wait for next year");
+    else{
+        reject("wait for next year");
     }
-}
+
+});
+
+promise.then(result => console.log(result))
+       .catch(error => console.log(error))
+       .finally(msg => console.log("done"));
     </script>   
     
 </body>
