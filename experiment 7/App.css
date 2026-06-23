@@ -1,0 +1,17 @@
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.student-card {
+  width: 300px;
+  margin: 20px auto;
+  padding: 15px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  color: navy;
+}
